@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Sample"
+             x:Class="Sample.App">
+    <Application.Resources>
+        <Style TargetType="Label" ApplyToDerivedTypes="True">
+            <Setter Property="TextColor" Value="Red"/>
+            <Setter Property="FontSize" Value="Medium"/>
+        </Style>
+
+        <Style TargetType="local:SubLabel" ApplyToDerivedTypes="True">
+            <Setter Property="FontSize" Value="Large"/>
+        </Style>
+
+        <Style TargetType="local:SubLabelExplicit" x:Key="SuperStyle">
+            <Setter Property="FontSize" Value="Micro"/>
+        </Style>
+    </Application.Resources>
+</Application>
